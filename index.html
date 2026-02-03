@@ -3,39 +3,269 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Loading...</title>
   <meta name="6a97888e-site-verification" content="057877552f6f1132f5611bd503c80368">
+  <title>Loading...</title>
+ <title>Free and Simple | Videos Viral</title>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1JCKL80FJ4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-1JCKL80FJ4');
-</script>
+
+<style>
+body{margin:0;background:#000;color:#fff;font-family:sans-serif}
+h2{text-align:center;padding:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px}
+.card{position:relative;aspect-ratio:9/16;border-radius:12px;overflow:hidden}
+.card video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  background:#000;
+  pointer-events:none;
+}
+.label{position:absolute;bottom:0;width:100%;padding:6px;
+background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
+.read-more-wrap{text-align:center;padding:20px}
+.read-more{padding:10px 24px;border-radius:20px;border:none;cursor:pointer}
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.overlay-btn{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,.35);
+  opacity:0;
+  transition:.25s;
+}
+
+.card:hover .overlay-btn,
+.card:active .overlay-btn{
+  opacity:1;
+}
+
+.overlay-btn span{
+  background:#ff0050;
+  color:#fff;
+  padding:10px 18px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+  box-shadow:0 6px 20px rgba(0,0,0,.4);
+}
+@media (hover: none) and (pointer: coarse) {
+  .overlay-btn{
+    opacity:1;
+  }
+}
+
+</style>
+
 </head>
 
 <body>
+
+<h2>Free and Simple | Viral Videos</h2>
+
+  <div class="grid" id="grid"></div>
+  <div class="read-more-wrap">
+
+  <button class="read-more" id="more">Read More</button>
+</div>
 <script>
-  const destination = "https://braceslinear.com/d40w8mx5c?key=e15240371508f21838848c29a618630a";
+const MAIN = [
+  {
+    user:"@XPglsQ1c1",
+    src:"https://cdn.videy.co/XPglsQ1c1.mp4",
+    target:"https://colahcola078.github.io/XPglsQ1c1.mp4"
+  },
+  {
+    user:"@rNqOw2C11",
+    src:"https://cdn.videy.co/rNqOw2C11.mp4",
+    target:"https://colahcola078.github.io/rNqOw2C11.mp4"
+  },
+  {
+    user:"@jFtts4z21",
+    src:"https://cdn.videy.co/jFtts4z21.mp4",
+    target:"https://colahcola078.github.io/jFtts4z21.mp4"
+  },
+  {
+    user:"@Shr4oHQ01",
+    src:"https://cdn.videy.co/Shr4oHQ01.mp4",
+    target:"https://colahcola078.github.io/Shr4oHQ01.mp4"
+  },
+  {
+    user:"@SGQgUihZ1",
+    src:"https://cdn.videy.co/SGQgUihZ1.mp4",
+    target:"https://colahcola078.github.io/SGQgUihZ1.mp4"
+  },
+  {
+    user:"@8BpARWbm1",
+    src:"https://cdn.videy.co/8BpARWbm1.mp4",
+    target:"https://colahcola078.github.io/8BpARWbm1.mp4"
+  },
+  {
+    user:"@JiW2s6Qx1",
+    src:"https://cdn.videy.co/JiW2s6Qx1.mp4",
+    target:"https://colahcola078.github.io/JiW2s6Qx1.mp4"
+  },
+  {
+    user:"@sGE0bP8L1",
+    src:"https://cdn.videy.co/sGE0bP8L1.mp4",
+    target:"https://colahcola078.github.io/sGE0bP8L1.mp4"
+  },
+  {
+    user:"@8FRGZPuG1",
+    src:"https://cdn.videy.co/8FRGZPuG1.mp4",
+    target:"https://colahcola078.github.io/8FRGZPuG1.mp4"
+  }
+];
 
-  // Kirim event + redirect setelah event terkirim
-  gtag('event', 'redirect_click', {
-    event_category: 'redirect',
-    event_label: destination,
-    transport_type: 'beacon',
-    event_callback: function () {
-      window.location.href = destination;
-    }
-  });
-
-  // Fallback jika GA diblokir (WAJIB)
-  setTimeout(() => {
-    window.location.href = destination;
-  }, 1200);
+const MORE = [
+  {
+    user:"@la1Kavd61",
+    src:"https://cdn.videy.co/la1Kavd61.mp4",
+    target:"https://colahcola078.github.io/la1Kavd61.mp4"
+  },
+  {
+    user:"@iQQxGZw21",
+    src:"https://cdn.videy.co/iQQxGZw21.mp4",
+    target:"https://colahcola078.github.io/iQQxGZw21.mp4"
+  },
+  {
+    user:"@jWEZ8ff91",
+    src:"https://cdn.videy.co/jWEZ8ff91.mp4",
+    target:"https://colahcola078.github.io/jWEZ8ff91.mp4"
+  },
+  {
+    user:"@5mkh055S1",
+    src:"https://cdn.videy.co/5mkh055S1.mp4",
+    target:"https://colahcola078.github.io/5mkh055S1.mp4"
+  },
+  {
+    user:"@bqinMeuU1",
+    src:"https://cdn.videy.co/bqinMeuU1.mp4",
+    target:"https://colahcola078.github.io/bqinMeuU1.mp4"
+  },
+  {
+    user:"@lavQiyRt1",
+    src:"https://cdn.videy.co/lavQiyRt1.mp4",
+    target:"https://colahcola078.github.io/lavQiyRt1.mp4"
+  },
+  {
+    user:"@O0zslLHn1",
+    src:"https://cdn.videy.co/O0zslLHn1.mp4",
+    target:"https://colahcola078.github.io/O0zslLHn1.mp4"
+  },
+  {
+    user:"@wjUQ8pki1",
+    src:"https://cdn.videy.co/wjUQ8pki1.mp4",
+    target:"https://colahcola078.github.io/wjUQ8pki1.mp4"
+  },
+  {
+    user:"@zXxGt8KP1",
+    src:"https://cdn.videy.co/zXxGt8KP1.mp4",
+    target:"https://colahcola078.github.io/zXxGt8KP1.mp4"
+  },
+  {
+    user:"@xzIl7niD1",
+    src:"https://cdn.videy.co/xzIl7niD1.mp4",
+    target:"https://colahcola078.github.io/xzIl7niD1.mp4"
+  },
+  {
+    user:"@Yoc709wf1",
+    src:"https://cdn.videy.co/Yoc709wf1.mp4",
+    target:"https://colahcola078.github.io/Yoc709wf1.mp4"
+  },
+  {
+    user:"@rS99hGLo1",
+    src:"https://cdn.videy.co/rS99hGLo1.mp4",
+    target:"https://colahcola078.github.io/rS99hGLo1.mp4"
+  },
+  {
+    user:"@iH2E1W7i1",
+    src:"https://cdn.videy.co/iH2E1W7i1.mp4",
+    target:"https://colahcola078.github.io/iH2E1W7i1.mp4"
+  },
+  {
+    user:"@Gjkd1tnR1",
+    src:"https://cdn.videy.co/Gjkd1tnR1.mp4",
+    target:"https://colahcola078.github.io/Gjkd1tnR1.mp4"
+  },
+  {
+    user:"@KxhZLomR1",
+    src:"https://cdn.videy.co/KxhZLomR1.mp4",
+    target:"https://colahcola078.github.io/KxhZLomR1.mp4"
+  },
+  {
+    user:"@W7DO6llC1",
+    src:"https://cdn.videy.co/W7DO6llC1.mp4",
+    target:"https://colahcola078.github.io/W7DO6llC1.mp4"
+  },
+  {
+    user:"@5J9uwV4t1",
+    src:"https://cdn.videy.co/5J9uwV4t1.mp4",
+    target:"https://colahcola078.github.io/5J9uwV4t1.mp4"
+  },
+  {
+    user:"@E5koyMrG1",
+    src:"https://cdn.videy.co/E5koyMrG1.mp4",
+    target:"https://colahcola078.github.io/E5koyMrG1.mp4"
+  },
+  {
+    user:"@ykdjPPXT1",
+    src:"https://cdn.videy.co/ykdjPPXT1.mp4",
+    target:"https://colahcola078.github.io/ykdjPPXT1.mp4"
+  }
+];
 </script>
-</body>
 
+<script>
+(()=>{const g=document.getElementById("grid"),
+m=document.getElementById("more"),
+R=e=>{e.forEach(t=>{const o=document.createElement("div");
+o.className="card";
+const i=t.src.includes("cdn.videy.co");
+o.innerHTML = `
+<video src="${t.src}#t=0.1"
+  muted
+  playsinline
+  preload="metadata"
+></video>
+<div class="label">${t.user}</div>
+${i?'<div class="overlay-btn"><span>▶ Watch</span></div>':''}`;
+o.onclick=()=>location.href=t.target;
+g.appendChild(o)})};
+R(MAIN);
+m.onclick=()=>{R(MORE);m.style.display="none"}})();
+</script>
+<script>
+if(!/Android|iPhone|iPad/i.test(navigator.userAgent)){
+  document.onkeydown=e=>{
+    if(
+      e.keyCode==123 ||
+      (e.ctrlKey&&e.shiftKey&&[73,74].includes(e.keyCode)) ||
+      (e.ctrlKey&&e.keyCode==85)
+    ) return false;
+  };
+}
+document.oncontextmenu=()=>false;
+</script>
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4992245,4,511,95,18,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4992245&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
 </html>
